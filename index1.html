@@ -44,22 +44,15 @@
             </div>
         </div>
     </header>
-
-    <main class=" h-[80%] ">
-        <!-- <div class="  grid grid-cols-11 h-[500px] "> -->
-        <div class="  grid  grid-cols-12 content-center gap-4">
+    <main  >
+        <div class=" grid  grid-cols-12 content-center gap-4">
             <div class=" bg-[url('1.png')]  col-span-10 col-start-2  h-[400px] bg-center bg-cover rounded-3xl ">
-
-            <!-- <div class="col-span-1"></div> -->
-            <!-- <div
-                class="bg-[url('1.png')]  h-[400px] bg-center bg-cover p-2 rounded-3xl mt-5 ">
-            </div> -->
-            <!-- <div class="col-span-1"></div> -->
             </div>
         </div>
 
-        <div class=" gap-4 grid grid-cols-12 w-full ">
-            <div class="col-span-8 bg-gray-300 rounded-3xl flex flex-col">
+        <!-- <div class="grid grid-flow-col grid-rows-12 gap-4">
+        <section class=" gap-4 grid grid-cols-12 col-span-12 row-span-12">
+             <div class="col-span-10 bg-gray-300 rounded-3xl flex flex-col">
                 <div class="flex  flex-col">
                     <h1>About the Experience</h1>
                     <p>Experience the magic of the golden hour on this guided private hike. Our local expert will take
@@ -70,16 +63,16 @@
                         preference.</p>
                 </div>
 
-                <div class="grid grid-cols-12 h-[10px] ">
+                <div class="grid grid-cols-12 ">
                     <img src="1.png" class="col-span-6" alt="dd">
                     <img src="1.png" class="col-span-6" alt="dd">
                     <img src="1.png" class="col-span-6" alt="dd">
                     <img src="1.png" class="col-span-6" alt="dd">
                 </div>
             </div>
-
-            <div class="col-span-4 bg-gray-700 rounded-3xl flex gap-4 h-[600px] flex-col">
-                <div class="bg-gray-300 h-[100px] rounded-3xl">
+        </section>
+        <aside class=" bg-gray-700 rounded-3xl flex gap-4 h-[600px] flex-col col-span-4 row-span-8">
+            <div class="bg-gray-300 h-[100px] rounded-3xl">
                     <p>From</p>
                     <p>$250</p>
                 </div>
@@ -98,12 +91,53 @@
                     <p>total</p> <button class="bg-yellow-500 rounded-3xl">boot now</button>
                 </div>
                 <div class="bg-gray-300 h-[100px]"> </div>
+            
+        </aside>
+        </div> -->
+        <div class="flex gap-4">
+        <section class=" w-[70%] grid grid-flow-col grid-rows-4 gap-4">
+             <div class="col-span-10 row-span-4 bg-gray-300 rounded-3xl flex flex-col">
+                <div class="flex  flex-col">
+                    <h1 class="font-bold">About the Experience</h1>
+                    <p class="h-[200px]">Experience the magic of the golden hour on this guided private hike. Our local expert will take
+                        you through secret trails to the best vantage points for photography, away from the crowded
+                        tourist spots.
+                        The tour concludes with a gourmet picnic featuring local Swiss cheeses and wines as the stars
+                        come out over the Matterhorn. Suitable for all fitness levels, as the pace is tailored to your
+                        preference.</p>
+                </div>
+
+                <div class="grid col-span-10 row-span-6 grid-cols-12 gap-2 ">
+                    <img src="1.png" class="col-span-6 h-[260px]  col-start-1  bg-cover rounded-3xl" alt="dd">
+                    <img src="1.png" class="col-span-6 h-[260px]  bg-cover rounded-3xl" alt="dd">
+                    <img src="1.png" class="col-span-6 h-[260px] col-start-1  bg-cover rounded-3xl " alt="dd">
+                    <img src="1.png" class="col-span-6 h-[260px]   bg-cover rounded-3xl " alt="dd">
+                </div>
             </div>
-
+        </section>
+        <aside class="w-[30%] bg-gray-700 h-[500px] rounded-3xl flex gap-4 flex-col grid-cols-12">
+            <div class="bg-gray-300 h-[100px] rounded-3xl">
+                    <p>From</p>
+                    <p>$250</p>
+                </div>
+                <div class="bg-gray-300 h-[100px]">
+                    <p>Select Date</p> <input type="date">
+                </div>
+                <div class="bg-gray-300 h-[100px] ">
+                    <p>Guests</p>
+                    <div class="bg-gray-500 rounded-3xl flex justify-between">
+                        <p>-</p>
+                        <p>2</p>
+                        <p>+</p>
+                    </div>
+                </div>
+                <div class="bg-gray-300 h-[100px]">
+                    <p>total</p> <button class="bg-yellow-500 rounded-3xl">boot now</button>
+                </div>
+                <!-- <div class="bg-gray-300 h-[100px]"> </div> -->
+            
+        </aside>
         </div>
-
     </main>
-    <footer class="bg-black h-[300px]"></footer>
+   <footer class="bg-black h-[300px]"></footer>
 </body>
-
-</html>
