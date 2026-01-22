@@ -17,29 +17,29 @@
         class=" fixed top-0 left-0 right-0 flex flex-col sm:flex-wrap sm:1/2 lg:w-full bg-white items-center  h-[63px] ">
         <div class="flex flex-wrap ">
             <div class=" p-5">
-                <img src="viatorr.png" class="h-6 w-auto  ">
+                <img src="viatorr.png" alt="viatorr" class="h-6 w-auto  ">
                 <p class="text-[8px] font-bold justify-center">a Tripadvisor company</p>
             </div>
 
             <div class=" pl-15 flex flex-wrap items-center justify-between p-4 gap-14 ">
                 <button
-                    class=" flex-wrap transform motion-safe:hover:scale-110 cursor-default font-semibold text-[12px]  h-10 py-2 px-4 w-25   rounded-3xl bg-emerald-300 hover:bg-fuchsia-200 ">Destinations
+                    class=" flex-wrap transform motion-safe:hover:scale-110 cursor-default font-semibold text-[12px]  h-10 py-2 px-4 w-25   rounded-3xl bg-emerald-300 hover:bg-emerald-600 ">Destinations
                 </button>
                 <button
-                    class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20   rounded-3xl bg-emerald-300  hover:bg-fuchsia-200 ">Activités
+                    class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20   rounded-3xl bg-emerald-300  hover:bg-emerald-600 ">Activités
                 </button>
                 <button
-                    class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20   rounded-3xl bg-emerald-300  hover:bg-fuchsia-200 ">Détails
+                    class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20   rounded-3xl bg-emerald-300  hover:bg-emerald-600">Détails
                 </button>
                 <button
-                    class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20  rounded-3xl bg-emerald-300  hover:bg-fuchsia-200 ">Logine
+                    class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20  rounded-3xl bg-emerald-300  hover:bg-emerald-600 ">Logine
                 </button>
             </div>
         </div>
 
         <div class="  pl-[250px] flex items-center gap-6 ">
             <div class="gap-6 flex">
-                <div flex> <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <div> <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24">
                         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                             stroke-width="2">
@@ -66,7 +66,7 @@
     </header>
 
     <label for="search">
-        <input type="text" placeholder="search" class="border  my-3 rounded">
+        <input type="text" id="search" placeholder="search" class="border  my-3 rounded">
     </label>
 
 
@@ -88,7 +88,8 @@
             <div class=" gap-5 items-center py-13 ">
                 <button
                     class="border border-black rounded-full py-3 px-6    w-50 bg-green-900  tex text-white hover:bg-black">
-                    <img src="star.png" alt="star" width="20" class=" inline-block">Build your
+                    
+                     <img src="star.png" alt="star" width="20" class=" inline-block">Build your
                     trip</button>
 
             </div>
@@ -102,7 +103,7 @@
 
 
 
-        <h1 class="text-2xl mx-4 ">Explore popular Experience</h1>
+        <h1 class="text-2xl mx-4 font-bold ">Explore popular Experience</h1>
         <p class="mx-4">See what other travelers like to do, based on ratings and number of bookings.</p>
 
 
@@ -118,9 +119,9 @@
 
 
 
-        </div>
-        <div class=" flex flex-column justify-end ">
-            <button class="border border-black rounded bg-white w-25  hover:bg-pink-50">See All</button>
+
+        <div class=" flex flex-column lg:justify-end  xs-justify-start">
+            <button class="p-1 border border-black rounded bg-white w-25  hover:bg-pink-50">See All</button>
         </div>
 
         <div class="card py-5  mx-4 bg-light-subtle content-around gap-4 ">
@@ -140,23 +141,27 @@
             <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> cultural tours</button>
             <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> day trip </button>
             <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50 "> nature</button>
-
+        </div>
     </section>
+
     <hr>
 
     <section class="p-4">
 
         <div class="flex flex-wrap justify-between py-2">
-            <h1 class="text-2xl mx-4">Recommended for You</h1>
+            <h1 class="text-2xl mx-4 font-bold">Recommended for You</h1>
             <button class="border border-black rounded bg-white w-25  hover:bg-pink-50">See All</button>
 
         </div>
         <p class="mx-4">Tours and activities tailored to your interests.</p>
         <!-- les image-->
         <div class=" grid grid-rows-3 grid-flow-col gap-4 py-4">
-            <img src="moto.jpg" alt="image chawen" class="  rounded-t-lg   row-start-1 row-end-4 transform motion-safe:hover:scale-105">
-            <img src="people.jpg" alt="people" class=" rounded-t-lg  row-start-1 row-end-4 transform motion-safe:hover:scale-105">
-            <img src="sawma3A.jpg" alt="sawma3a" class=" rounded-t-lg  row-start-1 row-end-4 transform motion-safe:hover:scale-105">
+            <img src="moto.jpg" alt="image chawen"
+                class="  rounded-t-lg   row-start-1 row-end-4 transform motion-safe:hover:scale-105">
+            <img src="people.jpg" alt="people"
+                class=" rounded-t-lg  row-start-1 row-end-4 transform motion-safe:hover:scale-105">
+            <img src="sawma3A.jpg" alt="sawma3a"
+                class=" rounded-t-lg  row-start-1 row-end-4 transform motion-safe:hover:scale-105">
         </div>
         <!--la partie de descrption des image-->
         <div class="grid grid-rows-3 grid-flow-col gap-4 py-4">
@@ -219,16 +224,20 @@
     <section class="p-4">
 
         <div class="flex flex-wrap justify-between py-2">
-            <h1 class="text-2xl mx-4">Recommended for You</h1>
+            <h1 class="text-2xl mx-4 font-bold">Must-do experiences in Rabat</h1>
+            <p>Book these experiences for a close-up look at Rabat.</p>
             <button class="border border-black rounded bg-white w-25  hover:bg-pink-50">See All</button>
 
         </div>
         <p class="mx-4">Tours and activities tailored to your interests.</p>
         <!-- les image-->
         <div class=" grid grid-rows-3 grid-flow-col gap-4 py-4">
-            <img src="moto.jpg" alt="image chawen" class="rounded-t-lg   row-start-1 row-end-4 transform motion-safe:hover:scale-105">
-            <img src="people.jpg" alt="people" class="  rounded-t-lg   row-start-1 row-end-4 transform motion-safe:hover:scale-105">
-            <img src="sawma3A.jpg" alt="sawma3a" class=" rounded-t-lg  row-start-1 row-end-4 transform motion-safe:hover:scale-105">
+            <img src="moto.jpg" alt="image chawen"
+                class="rounded-t-lg   row-start-1 row-end-4 transform motion-safe:hover:scale-105">
+            <img src="people.jpg" alt="people"
+                class="  rounded-t-lg   row-start-1 row-end-4 transform motion-safe:hover:scale-105">
+            <img src="sawma3A.jpg" alt="sawma3a"
+                class=" rounded-t-lg  row-start-1 row-end-4 transform motion-safe:hover:scale-105">
         </div>
         <!--la partie de descrption des image-->
         <div class="grid grid-rows-3 grid-flow-col gap-4 py-4">
@@ -292,13 +301,22 @@
             <div class=" grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
 
                 <img src="facebook.png" alt="cliquez pour voir olus" class=" w-12 mx-auto">
+                <P class="text text-white">www.facebook.com</P>
                 <img src="X.png" alt="cliquez pour voir olus" class="  w-12 mx-auto ">
+            <p class="text text-white">www.x.com</p>
                 <img src="instaa.png" alt="cliquez pour voir olus" class="h-12 w-12 mx-auto ">
+                <p  class="text text-white">www.instagrame.com</p>
 
                 <img src="youtu.png" alt="cliquez pour voir olus" class=" w-12 mx-auto ">
-
+                <p class="text text-white">www.youtube.com</p>
             </div>
+
+
+        </div>
     </footer>
+    
+
+
 
 </body>
 
