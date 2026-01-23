@@ -1,33 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-
-</head>
-
+    <title>Victor</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="Script.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
+    
+   </head>
 <body>
+    
+
+
 <header class="  flex flex-col sm:flex-row sm:1/2 lg:w-full bg-white items-center  h-[63px] ">
 <div class="flex flex-wrap ">
     <div class=" p-5" >
-    <img  src="viatorr.png" alt="description image" class="h-6 w-auto  ">
+    <img  src="viatorr.png" alt="logo" class="h-6 w-auto  ">
     <p class="text-[8px] font-bold justify-center">a Tripadvisor company</p>
 
     </div>
 
  
     
-    <div class=" hidden sm:flex gap-4 pl-15 items-center justify-between p-4 gap-14 ">
-    <button class=" flex-wrap transform motion-safe:hover:scale-110 cursor-default font-semibold text-[12px]  h-10 py-2 px-4 w-25   rounded-3xl bg-emerald-300 hover:bg-fuchsia-200 ">Destinations </button>
-     <button class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20   rounded-3xl bg-emerald-300  hover:bg-fuchsia-200 ">Activités  </button>
-      <button class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20   rounded-3xl bg-emerald-300  hover:bg-fuchsia-200 ">Détails </button>
-       <button class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20  rounded-3xl bg-emerald-300  hover:bg-fuchsia-200 ">Logine </button>
-    </div>
-   
+    <div class=" hidden sm:flex gap-4 pl-0 sm:pl-15  items-center justify-between p-4  ">
+    <a href="Home.html" class=" flex-wrap transform motion-safe:hover:scale-110 cursor-default font-semibold text-[12px]  h-10 py-2 px-4 w-25   rounded-3xl bg-emerald-300 hover:bg-fuchsia-200 ">Home</a>
+    <a href="Activités.html" class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20   rounded-3xl bg-emerald-300  hover:bg-fuchsia-200 ">Activités</a>   
+      <a href="Detail.html" class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20   rounded-3xl bg-emerald-300  hover:bg-fuchsia-200 ">Détails</a> 
+       <a href="login.html"class="flex-wrap transform motion-safe:hover:scale-110 font-semibold text-[12px]  h-10 py-2 px-4 w-20  rounded-3xl bg-emerald-300  hover:bg-fuchsia-200 ">Logine  </a>
+   </div>
 </div>
 
 <div class="  pl-[250px] flex items-center gap-6 ">
@@ -35,7 +36,7 @@
   
  
 <div class="gap-6 flex">
-    <div > <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <div> <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
         ><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/>
         <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg></div> 
@@ -47,7 +48,7 @@
          <label for="menu-toggle" class="cursor-pointer text-2xl">☰</label>
 
             <div class="hidden peer-checked:flex flex-col bg-white px-4 pb-4 sm:hidden"> 
-        <button class="py-2 text-left">Destinations</button> 
+        <button class="py-2 text-left">Home</button> 
         <button class="py-2 text-left">Activités</button> 
         <button class="py-2 text-left">Détails</button> 
         <button class="py-2 text-left">Login</button> </div>
@@ -55,267 +56,121 @@
          </div>
        
 </div>
-
-</div>
-    <div class=" h-[45px] mr-8  w-[75px] flex items-center rounded-3xl border-2   ">
+<div class=" fixed top-4 left-4 sm:static h-[45px] mr-8  w-[75px] flex items-center rounded-3xl border-2   ">
 <svg class="text-[#B3B3B3] ml-1 mr-4" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 512 512"><path  fill="currentColor" fill-rule="evenodd" d="M256 42.667A213.333 213.333 0 0 1 469.334 256c0 117.821-95.513 213.334-213.334 213.334c-117.82 0-213.333-95.513-213.333-213.334C42.667 138.18 138.18 42.667 256 42.667m21.334 234.667h-42.667c-52.815 0-98.158 31.987-117.715 77.648c30.944 43.391 81.692 71.685 139.048 71.685s108.104-28.294 139.049-71.688c-19.557-45.658-64.9-77.645-117.715-77.645M256 106.667c-35.346 0-64 28.654-64 64s28.654 64 64 64s64-28.654 64-64s-28.653-64-64-64"/></svg>
     </div>
+</div>
+    
     
    
 
     </header>
 
+    <main>
+
    
+<DIV class=" pt-[150px] ml-0 sm:ml-15  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20  px-6 mt-20 sm:mt-0 ">
+ <div >
+ 
+    <div class="bg-[url('Touba.jpg')] bg-cover h-65 rounded-lg transform motion-safe:hover:scale-105 "><h1 class="text-center text-3xl text-white font-bold mx-auto pt-25 pl-8 rounded-lg">Touba</h1> 
+   
+</div>
+ <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        ><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/>
+        <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>
+ <h1> Véritable joyau architectural et symbole de la culture et de la religion sénégalaise,
+        la Grande Mosquée de Touba est un lieu de pèlerinage incontournable pour les adeptes du mouridisme. 
+       
+       </h1>
+         </div>
+  
+   <div>     
+  <div class="bg-[url('Dakar.jpg')] bg-cover h-65 rounded-lg transform motion-safe:hover:scale-105"><h1 class="text-center text-3xl text-white font-bold mx-auto pt-25 pl-8 rounded-lg">Dakar</h1></div>
+     <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        ><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/>
+        <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>
+   <h1 class="text-sm sm:text-base lg:text-lg" >Métropole administrative, politique, militaire, économique, sociale et culturelle,
+     Dakar est une ville cosmopolite, africaine et européenne à la fois, de plus de 2.5 millions d’habitant.
+       </h1>
+  </div> 
 
+<div>
+  <div class="bg-[url('Goré.jpg')] bg-cover h-65 rounded-lg  transform motion-safe:hover:scale-105 "> <h1 class="text-center text-3xl text-white font-bold mx-auto pt-25 pl-8 ">Goré</h1> </div>
+   <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        ><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/>
+        <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg> 
+  <h1 class="text-sm sm:text-base lg:text-lg"> île classée à l'UNESCO près de Dakar, est centré sur son histoire poignante de la traite négrière, 
+    symbolisée par la Maison des Esclaves.
+       
+       </h1>
+</div>
+</DIV>
 
+<DIV class=" ml-15  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20 mt-10 px-6   ">
 
-    <section class="flex-col md:flex-row mx-4  my-3  flex gap-4 mt-40 sm:mt-0 ">
-        <div class="w-full md:w-1/2 my-5"><img src="/rabat.jpg" alt="rabat" width="1000" height="800">
-        </div>
+    <div>
 
-        <div class="flex-col md:flex-row  text-balance  sm:w-full lg:w-[45%] pl-13 pt-5 ">
-            <h1 class="text-5xl font-bold my-5  ">Top thing to do in rabat</h1>
-            <p class=" text-xl-center  my-5">Check out must-see sights and activities:
-                <a href="link" class="underline">Kasbah des Oudaias, Mausoleum of Mohammad V, City Tours, Historic
-                    Sites. </a> For
-                personalized recommendations, try our
-                AI trip-planning product.
-            </p>
+<div class="bg-[url('Lacrose.jpg')] bg-cover h-65 rounded-lg transform motion-safe:hover:scale-105">
+    <h1 class="text-center text-3xl text-white font-bold mx-auto pt-25 pl-8 rounded-lg ">Lac rose</h1></div>
+ <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        ><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/>
+        <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>
+<h1> Un site naturel emblématique, situé près de Dakar, avec un riche écosystème (flamants roses,
+     plantes halophiles) et une culture locale vivante, 
+    avec des artisans et des villages, nécessitant une gestion durable pour préserver son attractivité. 
+       </h1>
+       </div>
+       <div>
 
+  <div class="bg-[url('Mbour.jpg')] bg-cover h-65 rounded-lg transform motion-safe:hover:scale-105 ">
+    <h1 class="text-center text-3xl text-white font-bold mx-auto pt-25 pl-8 rounded-lg ">Mbour</h1></div>
+   <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        ><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/>
+        <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>
+  <h1> Saly (Mbour) est une station balnéaire sénégalaise très populaire, idéale pour
+     le farniente, les sports nautiques et les promenades sur ses
+     plages bordées de cocotiers, offrant une ambiance animée et de nombreuses options
+      d'hébergement et de restauration.
+       </h1>
+       </div>
+       <div>
+  <div class="bg-[url('Kaolack.jpg')] bg-cover h-65 rounded-lg transform motion-safe:hover:scale-105 "><h1 class="text-center text-3xl text-white font-bold mx-auto pt-25 pl-8 rounded-lg ">Sine Saloum</h1></div>
+ <svg class="flex-1  " xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        ><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m.6-3h16.8M3.6 15h16.8"/>
+        <path d="M11.5 3a17 17 0 0 0 0 18m1-18a17 17 0 0 1 0 18"/></g></svg>
+  <h1> Sine Saloum, classé Réserve de Biosphère UNESCO, est axé sur l'écotourisme, la découverte culturelle 
+    et l'aventure douce, avec des excursions
+     en pirogue dans les bolongs et mangroves, l'observation d'une richesse ornithologique exceptionnelle,
+       </h1>
+       </div>
+</DIV>
+</main>
 
-            <div class=" gap-5 items-center py-13 ">
-                <button
-                    class="border border-black rounded-full py-3 px-6    w-50 bg-green-900  tex text-white hover:bg-black">
-                    
-                     <img src="star.png" alt="star" width="20" class=" inline-block">Build your
-                    trip</button>
+<footer >
+    <div  class=" w-screen bg-black py-10 mt-8 ">
 
-            </div>
-        </div>
-
-    </section>
-
-
-
-    <section class="flex flex-col">
-
-
-
-        <h1 class="text-2xl mx-4 font-bold ">Explore popular Experience</h1>
-        <p class="mx-4">See what other travelers like to do, based on ratings and number of bookings.</p>
-
-
-
-
-
-
-        <!-- button -->
-
-
-
-
-
-
-
-
-        <div class=" flex flex-column lg:justify-end  xs-justify-start">
-            <button class="p-1 border border-black rounded bg-white w-25  hover:bg-pink-50">See All</button>
-        </div>
-
-        <div class="card py-5  mx-4 bg-light-subtle content-around gap-4 ">
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50 my-2 "> city tours (147)</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50">Day trips (122) </button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> Private and luxury</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> Gardenes</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> Shopping malls</button>
-
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> 4WD tours</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> shopping day</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> Historical tours</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50">full-day tours</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> Historic sites</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> Nature and Wild life
-                tours</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> cultural tours</button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50"> day trip </button>
-            <button class="border border-black rounded-full py-3 px-6 hover:bg-gray-50 "> nature</button>
-        </div>
-    </section>
-
-    <hr>
-
-    <section class="p-4">
-
-        <div class="flex flex-wrap justify-between py-2">
-            <h1 class="text-2xl mx-4 font-bold">Recommended for You</h1>
-            <button class="border border-black rounded bg-white w-25  hover:bg-pink-50">See All</button>
-
-        </div>
-        <p class="mx-4">Tours and activities tailored to your interests.</p>
-        <!-- les image-->
-        <div class=" grid grid-rows-3 grid-flow-col gap-4 py-4 ">
-            <img src="2A.jpg" alt="image chawen "
-                class="  rounded-t-lg   row-start-1 row-end-4 transform md:h-[300px] h-[108px] w-[108px] md:w-[300px] bg-cover bg-center    motion-safe:hover:scale-105">
-            <img src="people.jpg" alt="people"
-                class=" rounded-t-lg  row-start-1 row-end-4 transform motion-safe:hover:scale-105">
-            <img src="sawma3A.jpg" alt="sawma3a"
-                class=" rounded-t-lg  row-start-1 row-end-4 transform motion-safe:hover:scale-105">
-        </div>
-        <!--la partie de descrption des image-->
-        <div class="grid grid-rows-3 grid-flow-col gap-4 py-4">
-            <div class="row-start-1 row-end-4">
-                <h1 class="underline">Relaxing Lakeside Picnic Experience</h1>
-                <p class=" flex flex-row"> 4.5 <img src="bouton-denregistrement.png" alt="point vert" width="10">
-
-                    <img src="bouton-denregistrement.png" alt="point vert " width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9"> (345)
-                </p>
-                <P>Car Tours</P>
-                <p>from</p>
-                <P> $74 per adult (price varies by group size)</P>
-                <button
-                    class="border border-black rounded-full py-2 px-6 bg-green-400 hover:bg-green-700 ">reserve</button>
-
-            </div>
-            <!--la 2 description-->
-
-            <div class="row-start-1 row-end-4">
-                <h1 class="underline">Private Sin Saloum Day Trip from Saly</h1>
-                <p class=" flex flex-row"> 4.5 <img src="bouton-denregistrement.png" alt="point vert" width="10">
-
-                    <img src="bouton-denregistrement.png" alt="point vert " width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9"> (345)
-                </p>
-                <P>Car Tours</P>
-                <p>from</p>
-                <P> $74 per adult (price varies by group size)</P>
-                <button
-                    class="border border-black rounded-full py-2 px-6 bg-green-400 hover:bg-green-700 ">reserve</button>
-
-            </div>
-            <!--- la 3 description-->
-            <div class="row-start-1 row-end-4">
-                <h1 class="underline">Private Goré Day Trip from rabat</h1>
-                <p class=" flex flex-row"> 4.5 <img src="bouton-denregistrement.png" alt="point vert" width="10">
-
-                    <img src="bouton-denregistrement.png" alt="point vert " width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9"> (345)
-                </p>
-                <P>Car Tours</P>
-                <p>from</p>
-                <P> $74 per adult (price varies by group size)</P>
-                <button
-                    class="border border-black rounded-full py-2 px-6 bg-green-400 hover:bg-green-700 ">reserve</button>
-
-            </div>
+        <div class=" grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
+          
+         <img src="facebook.png" alt="cliquez pour voir olus" class=" w-12 mx-auto">
+         <img src="X.png" alt="cliquez pour voir olus" class="  w-12 mx-auto " >
+         <img src="instaa.png" alt="cliquez pour voir olus" class="h-12 w-12 mx-auto ">
+        
+         <img src="youtu.png" alt="cliquez pour voir olus" class=" w-12 mx-auto ">
+      
         </div>
 
 
-    </section>
-
-    <section class="p-4">
-
-        <div class="flex flex-wrap justify-between py-2">
-            <h1 class="text-2xl mx-4 font-bold">Must-do experiences in Rabat</h1>
-            <p>Book these experiences for a close-up look at Rabat.</p>
-            <button class="border border-black rounded bg-white w-25  hover:bg-pink-50">See All</button>
-
-        </div>
-        <p class="mx-4">Tours and activities tailored to your interests.</p>
-        <!-- les image-->
-        <div class=" grid grid-rows-3 grid-flow-col gap-4 py-4">
-            <img src="moto.jpg" alt="image chawen"
-                class="rounded-t-lg   row-start-1 row-end-4 transform motion-safe:hover:scale-105">
-            <img src="people.jpg" alt="people"
-                class="  rounded-t-lg   row-start-1 row-end-4 transform motion-safe:hover:scale-105">
-            <img src="sawma3A.jpg" alt="sawma3a"
-                class=" rounded-t-lg  row-start-1 row-end-4 transform motion-safe:hover:scale-105">
-        </div>
-        <!--la partie de descrption des image-->
-        <div class="grid grid-rows-3 grid-flow-col gap-4 py-4">
-            <div class="row-start-1 row-end-4">
-                <h1 class="underline">Private Dakar Day Trip from Casablanca</h1>
-                <p class=" flex flex-row"> 4.5 <img src="bouton-denregistrement.png" alt="point vert" width="10">
-
-                    <img src="bouton-denregistrement.png" alt="point vert " width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9"> (345)
-                </p>
-                <P>Car Tours</P>
-                <p>from</p>
-                <P> $74 per adult (price varies by group size)</P>
-                <button
-                    class="border border-black rounded-full py-2 px-6 bg-green-400 hover:bg-green-700 ">reserve</button>
-
-            </div>
-            <!--la 2 description-->
-
-            <div class="row-start-1 row-end-4">
-                <h1 class="underline">Private Rabat Day Trip from Casablanca</h1>
-                <p class=" flex flex-row"> 4.5 <img src="bouton-denregistrement.png" alt="point vert" width="10">
-
-                    <img src="bouton-denregistrement.png" alt="point vert " width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9"> (345)
-                </p>
-                <P>Car Tours</P>
-                <p>from</p>
-                <P> $74 per adult (price varies by group size)</P>
-                <button
-                    class="border border-black rounded-full py-2 px-6 bg-green-400 hover:bg-green-700 ">reserve</button>
-
-            </div>
-            <!--- la 3 description-->
-            <div class="row-start-1 row-end-4">
-                <h1 class="underline">Private Rabat Day Trip from Casablanca</h1>
-                <p class=" flex flex-row"> 4.5 <img src="bouton-denregistrement.png" alt="point vert" width="10">
-
-                    <img src="bouton-denregistrement.png" alt="point vert " width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9">
-                    <img src="bouton-denregistrement.png" alt=" point vert" width="9"> (345)
-                </p>
-                <P>Car Tours</P>
-                <p>from</p>
-                <P> $74 per adult (price varies by group size)</P>
-                <button
-                    class="border border-black rounded-full py-2 px-6 bg-green-400 hover:bg-green-700 ">reserve</button>
-
-            </div>
-        </div>
-
-    </section>
-    <footer>
-        <div class=" w-screen bg-black py-10 mt-8 ">
-
-            <div class=" grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6">
-
-                <img src="facebook.png" alt="cliquez pour voir olus" class=" w-12 mx-auto">
-                <P class="text text-white">www.facebook.com</P>
-                <img src="X.png" alt="cliquez pour voir olus" class="  w-12 mx-auto ">
-            <p class="text text-white">www.x.com</p>
-                <img src="instaa.png" alt="cliquez pour voir olus" class="h-12 w-12 mx-auto ">
-                <p  class="text text-white">www.instagrame.com</p>
-
-                <img src="youtu.png" alt="cliquez pour voir olus" class=" w-12 mx-auto ">
-                <p class="text text-white">www.youtube.com</p>
-            </div>
+    </div>
 
 
-        </div>
-    </footer>
-    
-
+</footer>
 
 
 </body>
-
 </html>
