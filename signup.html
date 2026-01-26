@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 text-base font-normal leading-relaxed text-gray-800 font-sans overflow-x-hidden">
+    <div class="auth w-full h-screen flex flex-col items-center justify-center relative select-none">
+        <div class="auth-container w-96 mx-5 relative">
+            <div class="absolute z-50 w-10 h-10 rounded-full">
+              <a href="Home.html"> <img src="close.svg" alt="close"></a> 
+            </div>
+            <form method="post" class="auth-form w-full bg-[#CCF3EA] shadow-[0_4px_10px_rgba(0,0,0,0.12)] p-6 rounded-xl relative">
+                <div class="itemscontainer flex flex-col items-center">
+                    <h1 class="m-0 leading-normal text-3xl font-[900] font-['Gilroy-Medium'] mb-5">Sign Up</h1>                
+                </div>
+                
+                <div class="firstname-lastname w-full p-0 m-0 flex flex-row items-start">
+                    <div class="auth-input w-full relative mb-4 flex flex-col items-start justify-center mr-6">
+                        <input placeholder="First name" id="firstname" 
+                               class="w-full h-10 rounded-full border-2 border-gray-300 outline-none appearance-none flex self-center items-center justify-center text-left transition-all duration-200 ease-in-out px-3 py-2 hover:border-blue-600 focus:border-blue-600 focus:ring-2 focus:ring-blue-200" />
+                    </div>
+                    <div class="auth-input w-full relative mb-4 flex flex-col items-start justify-center">
+                        <input placeholder="Last name" id="lastname" 
+                               class="w-full h-10 rounded-full border-2 border-gray-300 outline-none appearance-none flex self-center items-center justify-center text-left transition-all duration-200 ease-in-out px-3 py-2 hover:border-blue-600 focus:border-blue-600 focus:ring-2 focus:ring-blue-200" />
+                    </div>
+                </div>
+                
+                <div class="auth-input w-full relative mb-4 flex flex-col items-start justify-center">
+                    <label for="email" class="font-[800] font-['Gilroy-Regular'] text-base mb-1 text-gray-800 leading-normal">
+                        E-Mail :
+                    </label>
+                    <input type="email" name="email" id="email" 
+                           class="w-full h-10 rounded-full border-2 border-gray-300 outline-none appearance-none flex self-center items-center justify-center text-left transition-all duration-200 ease-in-out px-3 py-2 hover:border-blue-600 focus:border-blue-600 focus:ring-2 focus:ring-blue-200" />
+                </div>
+                
+                <div class="auth-input w-full relative mb-4 flex flex-col items-start justify-center">
+                    <label for="password" class="font-[800] font-['Gilroy-Regular'] text-base mb-1 text-gray-800 leading-normal">
+                        Password :
+                    </label>
+                    <input type="password" name="password" id="password" 
+                           class="w-full h-10 rounded-full border-2 border-gray-300 outline-none appearance-none flex self-center items-center justify-center text-left transition-all duration-200 ease-in-out px-3 py-2 hover:border-blue-600 focus:border-blue-600 focus:ring-2 focus:ring-blue-200" />
+                </div>
+                
+                <div class="auth-input w-full relative mb-4 flex flex-col items-start justify-center">
+                    <label for="password2" class="font-[800] font-['Gilroy-Regular'] text-base mb-1 text-gray-800 leading-normal">
+                        Confirm Password :
+                    </label>
+                    <input type="password" name="password" id="password2" 
+                           class="w-full h-10 rounded-full border-2 border-gray-300 outline-none appearance-none flex self-center items-center justify-center text-left transition-all duration-200 ease-in-out px-3 py-2 hover:border-blue-600 focus:border-blue-600 focus:ring-2 focus:ring-blue-200" />
+                </div>
+                
+                <button type="submit" name="submit" 
+                        class="auth-btn justify-self-center w-1/2 h-10 bg-blue-600 border-none rounded-full outline-none appearance-none relative text-white font-[800] font-['Gilroy-Medium'] text-sm tracking-wider transition-all duration-200 ease-in-out cursor-pointer flex items-center justify-center text-center mx-auto hover:bg-blue-700 focus:bg-blue-700 focus:ring-2 focus:ring-blue-300">
+                    Sign Up
+                </button>
+                
+                <br>
+                <div class="auth-bottom flex items-center justify-center no-underline text-gray-800 font-[800] font-['Gilroy-Medium'] transition-all duration-200 ease-in-out text-center leading-normal mt-4">
+                    Already have an account? <a href="login.html" class="flex items-center no-underline text-blue-600 font-[800] font-['Gilroy-Medium'] ml-1 hover:opacity-80">Log In Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
